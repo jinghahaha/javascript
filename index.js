@@ -163,3 +163,13 @@ console.log(hashSum(list, 16)); */
 
 // let fn = addArguments.bind(null, 32, 1);
 // fn(3)
+
+function changeObjProperty(o) {
+  o.siteUrl = "http://www.baidu.com"
+  o = new Object()
+  o.siteUrl = "http://www.google.com"
+  console.log(o.siteUrl);
+} 
+let webSite = new Object();
+changeObjProperty(webSite);
+console.log(webSite.siteUrl); 
